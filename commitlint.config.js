@@ -18,7 +18,7 @@ const SpellCaseValues = [
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'header-case': [RuleConfigSeverity.Error, 'always', SpellCaseValues[0]], // commit 类型后面接的标题
+    'header-case': [RuleConfigSeverity.Disabled, 'always', SpellCaseValues[0]], // commit 类型后面接的标题
     'header-max-length': [RuleConfigSeverity.Error, 'always', 50],
     'header-min-length': [RuleConfigSeverity.Error, 'always', 2],
     'header-trim': [RuleConfigSeverity.Error, 'always'], // 标题没有空格
