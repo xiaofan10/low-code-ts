@@ -1,4 +1,5 @@
 {
+  "eslintIntegration": true,
   "compilerOptions": {
     "target": "es5",
     "lib": [
