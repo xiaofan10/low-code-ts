@@ -2,30 +2,13 @@
   "name": "low-code-ts",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "-": "^0.0.1",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.96",
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
-    "D": "^1.0.0",
-    "prettier": "^3.2.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
     "prepare": "husky",
+    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix .",
     "cm": "git add -A && git-cz"
   },
   "eslintConfig": {
@@ -43,6 +26,45 @@
     "src/*.{js,jsx,ts,tsx}": "eslint --fix",
     "src/*": "prettier --write"
   },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@reduxjs/toolkit": "^2.2.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.96",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "D": "^1.0.0",
+    "add": "^2.0.6",
+    "ahooks": "^3.7.11",
+    "antd": "^5.16.4",
+    "axios": "^1.6.8",
+    "classnames": "^2.5.1",
+    "formik": "^2.4.5",
+    "mockjs": "^1.1.0",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "sass": "^1.75.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@craco/craco": "^7.1.0",
+    "@types/mockjs": "^1.0.10",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -54,12 +76,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.2.2",
-    "commitizen": "^4.3.0",
-    "cz-git": "^1.9.1",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2"
   }
 }
